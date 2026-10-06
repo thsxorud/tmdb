@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>영화 검색 & 찜 목록</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>영화 검색 & 찜 목록</h1>
+    <form id="search-form">
+      <input id="search-input" type="text" placeholder="영화 제목을 입력하세요" required>
+      <button type="submit">검색</button>
+    </form>
+  </header>
+
+  <main>
+    <section>
+      <h2>검색 결과</h2>
+      <div id="results" class="grid"><p class="empty">영화를 검색해보세요.</p></div>
+    </section>
+    <section>
+      <h2>내 찜 목록</h2>
+      <div id="wishlist" class="grid"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
